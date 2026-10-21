@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>Q2 Seatwork 1</title>
+    
+    <style>
+        body {
+            background-color: #ffdbe9;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 30px 10px;
+        }
+
+        h1 {
+            color: #b3005a;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #8c0050;
+            margin-top: 0;
+        }
+
+        main {
+            background-color: #ffffff;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #f5b7d0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #f2a4c8;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            background-color: #ff5ca8;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 10px;
+            color: #a10053;
+            font-weight: bold;
+        }
+
+        footer {
+            color: #8c0050;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Rainbow Catering Club </h1>
+        <p>Candidate Verification System</p>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="Enter your first name..."> <br>
+            <input type="text" id="last_name" placeholder="Enter your last name..."> <br>
+            <input type="button" py-click="candidate_checker" value="Enter">
+        </form>
+        <div id="result"></div>
+    </main> 
+    <footer>&copy; 2026 <span>Rainbow Catering Club</span> &bull; Seatwork 1 &bull; 2nd Quarter</footer>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
